@@ -1,0 +1,242 @@
+/* 
+    Author: Kane Miller
+    Date: 10-21-2024
+    File: styles.css
+    Description: This stylesheet contains the global styles and specific layout settings for my portfolio website.
+*/
+
+/* Resetting margin and padding for consistency across browsers */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Header section */
+.site-header {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Main site title styling */
+.site-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Styling for the tagline */
+.tagline {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #bbb;
+}
+
+/* Navigation menu styling */
+.site-navigation {
+    background-color: #333;
+    padding: 15px 0;
+    border-top: 1px solid #9d00ff;
+    border-bottom: 1px solid #9d00ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* List for navigation items */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Styling individual navigation list items */
+.nav-list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+/* Styling the links inside the navigation menu */
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Highlight the active navigation item */
+.nav-list li a.active {
+    color: #9d00ff;
+    border-bottom: 2px solid #9d00ff;
+}
+
+/* Hover state for navigation links */
+.nav-list li a:hover {
+    color: #ff79c6;
+    border-bottom: 2px solid #ff79c6;
+}
+
+/* Main content area styling */
+.main-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styling */
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* Content text styling */
+.section-content {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Resume button styling */
+.resume-download {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.resume-button {
+    background-color: #5a47f5;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #493ac1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Social section styling */
+.social-section {
+    margin-top: 40px;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #5a47f5;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #493ac1;
+}
+
+/* Footer section styling */
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Back-to-top button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #9d00ff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: none;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #6b00cc;
+}
+
+/* Contact form styles */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #9d00ff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #7b00cc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+}

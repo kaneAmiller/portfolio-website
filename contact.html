@@ -1,0 +1,130 @@
+<!-- 
+    Author: Kane Miller
+    Date: 10-21-2024
+    File: contact.html
+    Description: Contact page for my portfolio website. It contains a form for visitors to send messages via Formspree.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Kane Miller</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styling for the contact form */
+        .contact-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #9d00ff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #7b00cc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="site-header">
+        <h1 class="site-title">Get in Touch</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav class="site-navigation">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content for the contact form -->
+    <main class="main-content">
+        <section class="contact-section">
+            <h2 class="section-title">Let's Connect</h2>
+            <!-- Formspree form to send messages -->
+            <form action="https://formspree.io/f/xkgnggpz" method="POST" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Hidden redirect input for after form submission -->
+                <input type="hidden" name="_redirect" value="https://kaneAmiller.github.io/portfolio-website/thank-you.html">
+
+                <!-- Submit button -->
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer class="site-footer">
+        <p class="footer-text">&copy; 2024 Kane Miller. All rights reserved.</p>
+    </footer>
+
+    <!-- Form validation script -->
+    <script>
+        const form = document.querySelector(".contact-form");
+        form.addEventListener("submit", function (event) {
+            const email = document.getElementById("email").value;
+            if (!email.includes("@")) {
+                alert("Please enter a valid email address.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
