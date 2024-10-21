@@ -4,6 +4,7 @@
     File: contact.html
     Description: Contact page for my portfolio website. It contains a form for visitors to send messages via Formspree.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,63 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Kane Miller</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional Styling for the contact form */
-        .contact-section {
-            background-color: #f9f9f9;
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 0 auto;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-            background-color: #fff;
-            color: #333;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-        }
-
-        .submit-button {
-            background-color: #9d00ff;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .submit-button:hover {
-            background-color: #7b00cc;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .contact-section {
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Header section -->
@@ -82,7 +26,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 
@@ -110,21 +54,23 @@
         </section>
     </main>
 
-    <!-- Footer section with copyright information -->
+    <!-- Footer -->
     <footer class="site-footer">
-        <p class="footer-text">&copy; 2024 Kane Miller. All rights reserved.</p>
+        <p class="footer-text">
+            &copy; 2024 Kane Miller. All rights reserved. | 
+            <span class="social-links">
+                <a href="contact.html" class="contact-link">Contact Me</a>
+                <a href="https://github.com/kaneAmiller" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+            </span>
+        </p>
     </footer>
 
-    <!-- Form validation script -->
-    <script>
-        const form = document.querySelector(".contact-form");
-        form.addEventListener("submit", function (event) {
-            const email = document.getElementById("email").value;
-            if (!email.includes("@")) {
-                alert("Please enter a valid email address.");
-                event.preventDefault();
-            }
-        });
-    </script>
+    <!-- Link to the external JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>

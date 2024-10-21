@@ -4,27 +4,28 @@
     File: about.html
     Description: About page for my portfolio website.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta information about the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Kane Miller</title>
+    <meta name="description" content="Learn more about Kane Miller's transition into technical project management, including background in culinary arts, technology, and leadership.">
+    <meta name="keywords" content="Kane Miller, project management, technical project manager, career transition, culinary arts, technology, leadership">
+    <title>About Kane Miller - Technical Project Manager</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Learn more about Kane Miller's transition into project management.">
 </head>
 <body>
     <!-- Header section -->
     <header class="site-header">
-        <h1 class="site-title">About Kane Miller</h1>
+        <h1 class="site-title">About Kane</h1>
     </header>
 
     <!-- Navigation bar -->
     <nav class="site-navigation">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html" class="active">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -33,36 +34,40 @@
     <!-- Main content -->
     <main class="main-content">
         <!-- Section about Kane Miller's journey -->
-        <section class="about-section" style="display: flex; align-items: flex-start;">
-            <div style="flex: 1;">
+        <section class="about-section">
+            <div class="about-text">
                 <h2 class="section-title">My Journey</h2>
-                <p class="section-content">
-                    My journey into project management started with a background in culinary arts and technology. As a chef and kitchen manager, I developed a passion for leading teams, optimizing workflows, and managing high-pressure environments. These skills naturally transitioned into project management, where I now apply the same level of discipline and leadership to tech-driven projects.
-                </p>
-                
-                <p class="section-content">
-                    Currently, I’m pursuing a bachelor’s degree in computer science, further strengthening my ability to manage complex technology projects and align them with business goals. My experience in both fields allows me to blend technical expertise with practical business solutions, ensuring smooth project delivery from start to finish.
-                </p>
+                <p class="section-content"> My journey into project management began in the culinary arts, where I started as a chef and gradually advanced to kitchen management. This experience ignited my passion for leading teams, optimizing workflows, and thriving in high-pressure environments—skills that seamlessly transitioned into the realm of project management. </p> <p class="section-content"> Currently, I am pursuing a bachelor's degree in computer science, which allows me to blend my technical expertise with hands-on management experience. I excel at connecting technical teams with business objectives, ensuring projects are driven from concept to successful completion. </p>
             </div>
 
             <!-- Profile image section -->
-            <div style="flex: 0 0 200px; margin-left: 20px;">
-                <img src="images/profile.jpg" alt="Kane Miller" style="width: 100%; border-radius: 8px;">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Kane Miller" class="profile-picture">
             </div>
         </section>
 
         <!-- Section about Kane's hobbies and interests -->
         <section class="hobbies-section">
             <h2 class="section-title">Hobbies & Interests</h2>
-            <p class="section-content">
-                Outside of project management, I am deeply passionate about martial arts, particularly Brazilian Jiu-Jitsu and Muay Thai, which keep me both mentally and physically sharp. I also enjoy spending time with my dog, staying active outdoors, and exploring new culinary techniques. My interests in tech continue to grow, as I regularly challenge myself with side projects and coding exercises to further develop my technical skills.
-            </p>
+            <p class="section-content"> Outside of project management, I am primarily passionate about self-improvement and living a fulfilling life. I find great value in martial arts, particularly Brazilian Jiu-Jitsu and Muay Thai, as they keep me both mentally and physically sharp. I also enjoy exploring new culinary techniques, staying active outdoors, going to the gym, and continuously enhancing my technical skills through side projects and coding exercises. </p>
         </section>
     </main>
 
-    <!-- Footer section with copyright information -->
-    <footer class="site-footer">
-        <p class="footer-text">&copy; 2024 Kane Miller. All rights reserved.</p>
-    </footer>
+    <!-- Footer -->
+<footer class="site-footer" style="color: #fff;">
+    <p class="footer-text">
+        &copy; 2024 Kane Miller. All rights reserved. | 
+        <span class="social-links">
+            <a href="contact.html" class="contact-link">Contact Me</a>
+            <a href="https://github.com/kaneAmiller" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+            <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+        </span>
+    </p>
+</footer>
+
 </body>
 </html>

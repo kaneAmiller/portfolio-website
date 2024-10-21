@@ -4,15 +4,17 @@
     File: index.html
     Description: This is the home page for my project management portfolio website.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta information about the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Kane Miller</title>
+    <meta name="description" content="Portfolio website of Kane Miller, a Technical Project Manager specializing in Agile methodologies, project lifecycle management, and technical leadership.">
+    <meta name="keywords" content="Technical Project Manager, Project Management, Agile, Scrum, Kanban, GitHub, Kane Miller">
+    <meta name="author" content="Kane Miller">
+    <title>Kane Miller - Project Management Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Welcome to Kane Miller's Project Management Portfolio">
 </head>
 <body>
     <!-- Header with the site title and tagline -->
@@ -35,17 +37,20 @@
     <main class="main-content">
         <!-- Welcome section -->
         <section class="about-section">
-            <h2 class="section-title">Welcome</h2>
-            <p class="section-content">For more details about my professional experience, skills, and certifications, you can visit my LinkedIn profile.</p>
+            <h2 class="section-title">Welcome to My Portfolio</h2>
+            <p class="section-content">
+                Whether you're looking for insights into my technical background or interested in how I manage projects, you’ll find all the details here.
+                Check out my <a href="projects.html">projects</a> to explore case studies, or visit my <a href="about.html">About</a> page to learn more about my professional journey and skill set.
+            </p>
         </section>
 
         <!-- Social media links section -->
         <section class="social-section">
-            <h2 class="section-title">Connect with Me</h2>
-            <p>Follow me on LinkedIn and GitHub for updates and insights into my work:</p>
+            <h2 class="section-title">Stay Connected</h2>
+            <p>Follow my journey on LinkedIn for professional insights or check out my GitHub to explore projects and code snippets:</p>
             <p class="social-links">
-                <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/kaneAmiller" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank" class="linkedin-link">LinkedIn</a> |
+                <a href="https://github.com/kaneAmiller" target="_blank" class="github-link">GitHub</a>
             </p>
         </section>
 
@@ -56,11 +61,23 @@
     </main>
 
     <!-- Back to top button -->
-    <a href="#" class="back-to-top">Back to Top</a>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
 
-    <!-- Footer with copyright information -->
-    <footer class="site-footer">
-        <p class="footer-text">&copy; 2024 Kane Miller. All rights reserved.</p>
-    </footer>
+    <!-- Footer -->
+<footer class="site-footer" style="color: #fff;">
+    <p class="footer-text">
+        &copy; 2024 Kane Miller. All rights reserved. | 
+        <span class="social-links">
+            <a href="contact.html" class="contact-link">Contact Me</a>
+            <a href="https://github.com/kaneAmiller" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+            <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+        </span>
+    </p>
+</footer>
+
 </body>
 </html>
