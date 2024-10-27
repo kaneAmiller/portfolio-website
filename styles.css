@@ -2,7 +2,7 @@
     Author: Kane Miller
     Date: 10-26-2024
     File: styles.css
-    Version: 2.2
+    Version: 2.3
     Description: This stylesheet contains the global styles and specific layout settings for my portfolio website. 
                  It ensures consistency across various components, including buttons, navigation, and section content. 
                  Adjustments made in this version include color consistency, hover effects, and improvements for a professional aesthetic.
@@ -377,6 +377,33 @@ h2 {
 
     .footer-logo {
         width: 50px; 
+    }
+
+    /* Additional section adjustments if needed */
+    .section-content {
+        font-size: 1rem; 
+    }
+
+    .about-section {
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-text {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 15px;
+        width: 150px;
+    }
+
+    .profile-picture {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 }
 
