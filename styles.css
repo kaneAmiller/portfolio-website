@@ -2,7 +2,7 @@
     Author: Kane Miller
     Date: 10-26-2024
     File: styles.css
-    Version: 2.1
+    Version: 2.2
     Description: This stylesheet contains the global styles and specific layout settings for my portfolio website. 
                  It ensures consistency across various components, including buttons, navigation, and section content. 
                  Adjustments made in this version include color consistency, hover effects, and improvements for a professional aesthetic.
@@ -324,43 +324,59 @@ h2 {
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
-    /* Header adjustments for smaller screens */
     .site-header {
-        flex-direction: column; /* Stack elements vertically */
-        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center; 
+        padding: 15px 20px; 
     }
 
-    /* Logo adjustments */
     .logo {
-        width: 150px;
-        margin-bottom: 10px; /* Add spacing between the logo and text */
+        width: 120px; 
+        margin-bottom: 10px; 
     }
 
-    /* Main site title styling for smaller screens */
-    .site-title {
-        font-size: 2rem; /* Reduce font size for mobile */
-        text-align: center; /* Center the title */
-    }
-
-    /* Logo and text alignment adjustments */
     .header-content {
-        display: flex;
-        flex-direction: column; /* Stack title and logo vertically */
-        align-items: center;
+        text-align: center;
+        max-width: 100%; 
+    }
+
+    .site-title {
+        font-size: 2rem; 
+        line-height: 1.2;
+        margin: 5px 0; 
+        word-wrap: break-word; 
+    }
+
+    /* Adjust image within the header */
+    .header-content img {
+        display: block;
+        margin: 10px auto; 
     }
 
     /* Navigation adjustments for better spacing */
     .site-navigation {
-        padding: 5px 0;
+        padding: 10px 0;
+        text-align: center; 
     }
 
     .nav-list li {
-        margin-right: 15px; /* Reduce margin between nav items */
+        margin: 0 10px; 
+        display: inline-block;
     }
 
-    /* Reduce margin for the main content */
+    /* Adjust margin and padding for the main content */
     .main-content {
-        padding: 20px;
+        padding: 20px 10px; 
+        margin: 20px auto; 
+    }
+
+    /* Footer adjustments */
+    .site-footer {
+        padding: 30px 10px; 
+    }
+
+    .footer-logo {
+        width: 50px; 
     }
 }
 
