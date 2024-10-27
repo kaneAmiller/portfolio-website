@@ -1,57 +1,89 @@
 /* 
     Author: Kane Miller
-    Date: 10-21-2024
+    Date: 10-26-2024
     File: styles.css
-    Description: This stylesheet contains the global styles and specific layout settings for my portfolio website.
+    Version: 2.0
+    Description: This stylesheet contains the global styles and specific layout settings for my portfolio website. 
+                 It ensures consistency across various components, including buttons, navigation, and section content. 
+                 Adjustments made in this version include color consistency, hover effects, and improvements for a professional aesthetic.
 */
 
 /* Resetting margin and padding for consistency across browsers */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 /* Global styling */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
     color: #333;
     line-height: 1.8;
     scroll-behavior: smooth;
+    font-size: 1.1rem;
+}
+
+/* Consistent body text styling for all main sections */
+.section-body {
+    font-size: 1.1rem; 
+    color: #555; 
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Styling for section containers to maintain consistent spacing */
+.section-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header section */
 .site-header {
-    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #001f5b; 
     color: #fff;
-    padding: 60px 0;
+    border-bottom: 3px solid #495057;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Styling for the header content */
+.header-content {
+    flex-grow: 1;
     text-align: center;
 }
 
 /* Main site title styling */
 .site-title {
     font-size: 3rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-/* Styling for the tagline */
-.tagline {
-    font-size: 1.5rem;
-    font-weight: lighter;
-    color: #bbb;
+    letter-spacing: 1.5px;
+    margin: 0;
+    font-weight: bold;
 }
 
 /* Navigation menu styling */
 .site-navigation {
-    background-color: #333;
-    padding: 15px 0;
-    border-top: 1px solid #9d00ff;
-    border-bottom: 1px solid #9d00ff;
+    background-color: #33415c;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* List for navigation items */
@@ -65,7 +97,7 @@ body {
 /* Styling individual navigation list items */
 .nav-list li {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .nav-list li:last-child {
@@ -78,25 +110,25 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 .nav-list li a:hover,
 .nav-list li a:focus {
-    color: #ff79c6;
-    border-bottom: 2px solid #ff79c6;
-    outline: none; /* Accessibility improvement for focus state */
+    color: #ffd700; 
+    border-bottom: 2px solid #ffd700;
+    outline: none;
 }
 
 .nav-list li a.active {
-    color: #9d00ff;
-    border-bottom: 2px solid #9d00ff;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
 }
 
 /* Main content area styling */
 .main-content {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 40px;
     background-color: #fff;
     border-radius: 8px;
@@ -105,8 +137,9 @@ body {
 
 /* Section title styling */
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Content text styling */
@@ -122,21 +155,24 @@ h2 {
 }
 
 .resume-button {
-    background-color: #5a47f5;
+    background-color: #1e73be; 
     color: #fff;
     padding: 12px 24px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 1rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    display: inline-block; 
+    margin: 0 auto; 
 }
 
 .resume-button:hover,
 .resume-button:focus {
-    background-color: #493ac1;
+    background-color: #145a8b; 
+    transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    outline: none;
 }
 
 /* Social section styling */
@@ -151,52 +187,80 @@ h2 {
 
 .social-links a {
     text-decoration: none;
-    color: #5a47f5;
+    color: #1e73be;
     font-weight: bold;
     margin: 0 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-links a:hover,
 .social-links a:focus {
-    color: #493ac1;
+    color: #145a8b;
+    transform: scale(1.05); 
     outline: none;
 }
 
 /* Footer section styling */
 .site-footer {
-    background-color: #222;
+    background-color: #001f5b;
     color: #fff;
-    text-align: center;
-    padding: 60px 0;
+    padding: 40px 0;
+    border-top: 3px solid #495057;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
 }
 
-footer .footer-text img {
+/* Styling for the text and links in the footer */
+.footer-text {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    font-size: 1rem;
+}
+
+.footer-text a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-text a:hover,
+.footer-text a:focus {
+    color: #ffc107;
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Footer icon styling */
+.footer-icon {
     width: 24px;
     height: 24px;
-    margin-left: 10px;
-    vertical-align: middle;
+    transition: transform 0.3s;
 }
 
-/* Back-to-top button */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #9d00ff;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    display: none;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+.footer-icon:hover,
+.footer-icon:focus {
+    transform: scale(1.1);
+    outline: none;
 }
 
-.back-to-top:hover,
-.back-to-top:focus {
-    background-color: #6b00cc;
+/* Footer logo styling */
+.footer-logo {
+    width: 65px;
+    height: 65px;
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    transform: scale(1.1);
     outline: none;
 }
 
@@ -234,23 +298,6 @@ footer .footer-text img {
     resize: vertical;
 }
 
-.submit-button {
-    background-color: #9d00ff;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover,
-.submit-button:focus {
-    background-color: #7b00cc;
-    outline: none;
-}
-
 /* About page: Profile image and text */
 .about-section {
     display: flex;
@@ -265,34 +312,32 @@ footer .footer-text img {
 }
 
 .profile-image {
-    flex: 0 0 200px; /* Set a fixed width for the profile image */
-    max-width: 100%; /* Ensures the image is responsive */
+    flex: 0 0 200px;
+    max-width: 100%;
 }
 
 .profile-picture {
-    width: 100%; /* Makes sure the image fits the container */
-    height: auto; /* Maintains the aspect ratio of the image */
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text {
-        margin-right: 0;
+    .header-content {
         text-align: center;
     }
 
-    .profile-image {
-        margin-top: 20px;
-        width: 150px; /* Smaller size for smaller screens */
+    .logo {
+        width: 150px;
     }
 
-    .contact-section {
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .main-content {
         padding: 20px;
     }
 }
@@ -305,45 +350,80 @@ footer .footer-text img {
     width: 75%;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Project titles */
 #projects-titles {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 25px;
     padding-left: 5%;
     padding-right: 5%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
 }
 
+/* Individual project title */
 .project-title {
     margin: 0;
+    font-size: 1.6rem;
+    color: #333;
 }
 
+/* Navigation buttons container */
 .nav-buttons {
     text-align: center;
-    margin: 20px;
+    margin: 40px 0;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #9d00ff;
+/* Buttons styling */
+button,
+.next-button,
+.prev-button {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #1e73be; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-    background-color: #7a00cc;
+button:hover,
+button:focus,
+.next-button:hover,
+.next-button:focus,
+.prev-button:hover,
+.prev-button:focus {
+    background-color: #145a8b; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    outline: none;
 }
 
+/* Disabled button styling (if applicable) */
+button:disabled,
+.next-button:disabled,
+.prev-button:disabled {
+    background-color: #ccc;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Projects list */
 #projects-list {
     list-style: none;
     padding: 0;
 }
 
+/* Individual project item */
 #projects-list li {
     display: inline-block;
     margin-right: 10px;
@@ -353,15 +433,19 @@ button:hover {
     background-color: #ddd;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 0.9rem;
 }
 
-#projects-list li:hover {
-    background-color: #9d00ff;
+#projects-list li:hover,
+#projects-list li:focus {
+    background-color: #1e73be; 
     color: white;
+    transform: translateY(-2px);
+    outline: none;
 }
 
+/* Project list links */
 #projects-list li a {
     text-decoration: none;
     color: inherit;
