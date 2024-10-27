@@ -1,8 +1,10 @@
 <!-- 
     Author: Kane Miller
-    Date: 10-21-2024
+    Date: 10-26-2024
     File: index.html
-    Description: This is the home page for my project management portfolio website.
+    Version: 2.0
+    Description: The homepage of Kane Miller's portfolio website. This file includes the main structure and layout for the introduction and 
+                 overview of the portfolio. This version introduces updates to align styles and navigation with the global stylesheet.
 -->
 
 <!DOCTYPE html>
@@ -19,9 +21,11 @@
 <body>
     <!-- Header with the site title and tagline -->
     <header class="site-header">
-        <h1 class="site-title">Kane Miller</h1>
-        <p class="tagline">Technical Project Manager (TPM)</p>
-    </header>
+        <div class="header-content">
+            <h1 class="site-title">Kane Miller - Technical Project Manager (TPM)</h1>
+        </div>
+        <img src="images/secondary-logo.png" alt="Logo" class="logo">
+    </header>     
 
     <!-- Main navigation of the site -->
     <nav class="site-navigation">
@@ -47,7 +51,9 @@
         <!-- Social media links section -->
         <section class="social-section">
             <h2 class="section-title">Stay Connected</h2>
-            <p>Follow my journey on LinkedIn for professional insights or check out my GitHub to explore projects and code snippets:</p>
+            <p class="section-content">
+                Follow my journey on LinkedIn for professional insights or check out my GitHub to explore projects and code snippets:
+            </p>
             <p class="social-links">
                 <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank" class="linkedin-link">LinkedIn</a> |
                 <a href="https://github.com/kaneAmiller" target="_blank" class="github-link">GitHub</a>
@@ -60,22 +66,20 @@
         </div>
     </main>
 
-    <!-- Back to top button -->
-    <a href="#" class="back-to-top">↑ Back to Top</a>
-
     <!-- Footer -->
 <footer class="site-footer" style="color: #fff;">
     <p class="footer-text">
+        <a href="index.html">
+            <img src="images/icon-logo-2-nobackground.png" alt="Logo" class="footer-logo">
+        </a>
         &copy; 2024 Kane Miller. All rights reserved. | 
-        <span class="social-links">
-            <a href="contact.html" class="contact-link">Contact Me</a>
-            <a href="https://github.com/kaneAmiller" target="_blank">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 24px; height: 24px; vertical-align: middle;">
-            </a>
-            <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
-            </a>
-        </span>
+        <a href="contact.html" class="contact-link">Contact Me</a>
+        <a href="https://github.com/kaneAmiller" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="footer-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/kane-a-miller" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="footer-icon">
+        </a>
     </p>
 </footer>
 
