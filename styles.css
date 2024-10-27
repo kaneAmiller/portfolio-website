@@ -2,7 +2,7 @@
     Author: Kane Miller
     Date: 10-26-2024
     File: styles.css
-    Version: 2.0
+    Version: 2.1
     Description: This stylesheet contains the global styles and specific layout settings for my portfolio website. 
                  It ensures consistency across various components, including buttons, navigation, and section content. 
                  Adjustments made in this version include color consistency, hover effects, and improvements for a professional aesthetic.
@@ -322,21 +322,43 @@ h2 {
     border-radius: 8px;
 }
 
-/* Responsive design */
+/* Responsive design for mobile */
 @media (max-width: 768px) {
-    .header-content {
-        text-align: center;
+    /* Header adjustments for smaller screens */
+    .site-header {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px 20px;
     }
 
+    /* Logo adjustments */
     .logo {
         width: 150px;
+        margin-bottom: 10px; /* Add spacing between the logo and text */
     }
 
-    .about-section {
-        flex-direction: column;
-        padding: 20px;
+    /* Main site title styling for smaller screens */
+    .site-title {
+        font-size: 2rem; /* Reduce font size for mobile */
+        text-align: center; /* Center the title */
     }
 
+    /* Logo and text alignment adjustments */
+    .header-content {
+        display: flex;
+        flex-direction: column; /* Stack title and logo vertically */
+        align-items: center;
+    }
+
+    /* Navigation adjustments for better spacing */
+    .site-navigation {
+        padding: 5px 0;
+    }
+
+    .nav-list li {
+        margin-right: 15px; /* Reduce margin between nav items */
+    }
+
+    /* Reduce margin for the main content */
     .main-content {
         padding: 20px;
     }
