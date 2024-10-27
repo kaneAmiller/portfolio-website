@@ -2,10 +2,11 @@
     Author: Kane Miller
     Date: 10-26-2024
     File: styles.css
-    Version: 2.4
-    Description: This stylesheet contains the global styles and specific layout settings for my portfolio website. 
-                 It ensures consistency across various components, including buttons, navigation, and section content. 
-                 Adjustments made in this version include color consistency, hover effects, and improvements for a professional aesthetic.
+    Version: 2.5
+    Description: This stylesheet defines global styles and layout settings for the portfolio website.
+                 It ensures consistency across components like buttons, navigation, and section content.
+                 Version 2.4 includes updates for color consistency, hover effects, and aesthetic improvements 
+                 for a more professional appearance.
 */
 
 /* Resetting margin and padding for consistency across browsers */
@@ -512,6 +513,13 @@ button:disabled,
     color: white;
     transform: translateY(-2px);
     outline: none;
+}
+
+/* Highlight active project title */
+#projects-list li.active-project {
+    background-color: #1e73be; /* Highlight color */
+    color: white; /* Text color */
+    border: 2px solid #145a8b; /* Optional border for emphasis */
 }
 
 /* Project list links */
